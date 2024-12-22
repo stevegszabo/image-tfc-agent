@@ -1,5 +1,7 @@
 FROM hashicorp/tfc-agent:latest
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 USER root
 
 RUN apt-get update && \
